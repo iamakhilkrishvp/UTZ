@@ -1,0 +1,15 @@
+<resources>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="app_name">UTZ</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_splash_activty">SplashActivty</string>
+    <string name="title_activity_auditing">AuditingActivity</string>
+    <string name="title_activity_audit_profile">AuditProfileActivity</string>
+    <string name="title_activity_basic_audit_details">BasicAuditDetailsActivity</string>
+    <string name="title_activity_edit_audit_details">EditAuditDetailsActivity</string>
+    <string name="title_activity_home_page">HomePageActivity</string>
+    <string name="title_activity_result_sheet">ResultSheetActivity</string>
+    <string name="title_activity_single_audit_list">SingleAuditListActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+</resources>

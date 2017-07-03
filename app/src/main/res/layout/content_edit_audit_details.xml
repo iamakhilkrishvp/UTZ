@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A000000"
+    android:padding="10dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="cied.in.Utz.EditAuditDetailsActivity"
+    tools:showIn="@layout/activity_edit_audit_details">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:text="SAVE DETAILS"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="@color/colorPrimary"
+        android:id="@+id/textView17"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+
+        />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/textView17"
+        android:layout_marginBottom="10dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:id="@+id/scrollView">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Audit Details :"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/text1"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="N"
+                    android:textColor="@color/white"
+                    android:id="@+id/textView16"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="59dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Start Date"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/text2"
+                    android:layout_alignBottom="@+id/textView16"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="End Date"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/text3"
+                    android:layout_alignTop="@+id/textView16"
+                    android:layout_toRightOf="@+id/textView16"
+                    android:layout_toEndOf="@+id/textView16" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/startDateText"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@+id/text2"
+                    android:layout_toLeftOf="@+id/textView16"
+                    android:layout_alignLeft="@+id/text2"
+                    android:layout_alignStart="@+id/text2" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/endDateText"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@+id/textView16"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignLeft="@+id/text3"
+                    android:layout_alignStart="@+id/text3" />
+
+                <DatePicker
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/datePicker"
+                    android:visibility="gone"
+                    android:layout_alignBottom="@+id/startDateText"
+                    android:layout_alignLeft="@+id/startDateText"
+                    android:layout_alignStart="@+id/startDateText"
+                    android:layout_alignTop="@+id/startDateText"
+                    android:layout_alignRight="@+id/startDateText"
+                    android:layout_alignEnd="@+id/startDateText" />
+
+                <DatePicker
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/datePicker2"
+                    android:visibility="gone"
+                    android:layout_alignBottom="@+id/endDateText"
+                    android:layout_alignRight="@+id/endDateText"
+                    android:layout_alignEnd="@+id/endDateText"
+                    android:layout_alignLeft="@+id/text3"
+                    android:layout_alignStart="@+id/text3"
+                    android:layout_alignTop="@+id/endDateText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Farm Details :"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:id="@+id/text10"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@+id/startDateText"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="22dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Production Area :"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/text11"
+                    android:layout_below="@+id/text10"
+                    android:layout_alignLeft="@+id/text10"
+                    android:layout_alignStart="@+id/text10"
+                    android:layout_marginTop="20dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/farmAreaText"
+                    android:layout_marginTop="8dp"
+                    android:singleLine="true"
+                    android:nextFocusDown="@+id/addressText"
+                    android:maxLines="1"
+                    android:layout_below="@+id/text11"
+                    android:layout_alignLeft="@+id/text11"
+                    android:layout_alignStart="@+id/text11"
+                    android:layout_alignRight="@+id/endDateText"
+                    android:layout_alignEnd="@+id/endDateText" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address :"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/text12"
+                    android:layout_below="@+id/farmAreaText"
+                    android:layout_alignLeft="@+id/farmAreaText"
+                    android:layout_alignStart="@+id/farmAreaText"
+                    android:layout_marginTop="15dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/addressText"
+                    android:layout_marginTop="8dp"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:nextFocusDown="@+id/districtText"
+                    android:scrollHorizontally="true"
+                    android:layout_below="@+id/text12"
+                    android:layout_alignLeft="@+id/text12"
+                    android:layout_alignStart="@+id/text12"
+                    android:layout_alignRight="@+id/farmAreaText"
+                    android:layout_alignEnd="@+id/farmAreaText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="District :"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/text13"
+                    android:layout_below="@+id/addressText"
+                    android:layout_alignLeft="@+id/addressText"
+                    android:layout_alignStart="@+id/addressText"
+                    android:layout_marginTop="15dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/districtText"
+                    android:layout_marginTop="8dp"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:nextFocusDown="@+id/phoneNumberText"
+                    android:layout_below="@+id/text13"
+                    android:layout_alignLeft="@+id/text13"
+                    android:layout_alignStart="@+id/text13"
+                    android:layout_alignRight="@+id/addressText"
+                    android:layout_alignEnd="@+id/addressText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone Number :"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/text14"
+                    android:layout_below="@+id/districtText"
+                    android:layout_alignLeft="@+id/districtText"
+                    android:layout_alignStart="@+id/districtText"
+                    android:layout_marginTop="15dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/phoneNumberText"
+                    android:layout_marginTop="8dp"
+                    android:maxLines="1"
+                    android:inputType="phone"
+                    android:singleLine="true"
+                    android:nextFocusDown="@+id/tehsilText"
+                    android:layout_below="@+id/text14"
+                    android:layout_alignLeft="@+id/text14"
+                    android:layout_alignStart="@+id/text14"
+                    android:layout_alignRight="@+id/districtText"
+                    android:layout_alignEnd="@+id/districtText" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tehsil :"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/text15"
+                    android:layout_below="@+id/phoneNumberText"
+                    android:layout_alignLeft="@+id/phoneNumberText"
+                    android:layout_alignStart="@+id/phoneNumberText"
+                    android:layout_marginTop="15dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tehsilText"
+                    android:layout_marginTop="8dp"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:nextFocusDown="@+id/villageText"
+                    android:layout_below="@+id/text15"
+                    android:layout_alignLeft="@+id/text15"
+                    android:layout_alignStart="@+id/text15"
+                    android:layout_alignRight="@+id/phoneNumberText"
+                    android:layout_alignEnd="@+id/phoneNumberText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Working Hours :"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/text16"
+                    android:layout_below="@+id/tehsilText"
+                    android:layout_alignLeft="@+id/tehsilText"
+                    android:layout_alignStart="@+id/tehsilText"
+                    android:layout_marginTop="15dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/villageText"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:nextFocusDown="@+id/idNumberText"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@+id/text16"
+                    android:layout_alignLeft="@+id/text16"
+                    android:layout_alignStart="@+id/text16"
+                    android:layout_alignRight="@+id/tehsilText"
+                    android:layout_alignEnd="@+id/tehsilText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Identification Number :"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/text17"
+                    android:layout_below="@+id/villageText"
+                    android:layout_alignLeft="@+id/villageText"
+                    android:layout_alignStart="@+id/villageText"
+                    android:layout_marginTop="15dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/idNumberText"
+                    android:layout_marginTop="8dp"
+                    android:maxLines="1"
+                    android:inputType="phone"
+                    android:singleLine="true"
+                    android:nextFocusDown="@+id/CFAText"
+                    android:layout_below="@+id/text17"
+                    android:layout_alignLeft="@+id/text17"
+                    android:layout_alignStart="@+id/text17"
+                    android:layout_alignRight="@+id/villageText"
+                    android:layout_alignEnd="@+id/villageText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Permenent Male Workers :"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/text18"
+                    android:layout_below="@+id/idNumberText"
+                    android:layout_alignLeft="@+id/idNumberText"
+                    android:layout_alignStart="@+id/idNumberText"
+                    android:layout_marginTop="15dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/CFAText"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:nextFocusDown="@+id/totalPdctionAreaText"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@+id/text18"
+                    android:layout_alignLeft="@+id/text18"
+                    android:layout_alignStart="@+id/text18"
+                    android:layout_alignRight="@+id/idNumberText"
+                    android:layout_alignEnd="@+id/idNumberText" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Permenent Female Workers :"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/text19"
+                    android:layout_below="@+id/CFAText"
+                    android:layout_alignLeft="@+id/CFAText"
+                    android:layout_alignStart="@+id/CFAText"
+                    android:layout_marginTop="15dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/totalPdctionAreaText"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@+id/text19"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:nextFocusDown="@+id/areaUnderCastorText"
+                    android:layout_alignLeft="@+id/text19"
+                    android:layout_alignStart="@+id/text19"
+                    android:layout_alignRight="@+id/CFAText"
+                    android:layout_alignEnd="@+id/CFAText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Product Mined :"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/text20"
+                    android:layout_below="@+id/totalPdctionAreaText"
+                    android:layout_alignLeft="@+id/totalPdctionAreaText"
+                    android:layout_alignStart="@+id/totalPdctionAreaText"
+                    android:layout_marginTop="15dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/areaUnderCastorText"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:nextFocusDown="@+id/productionCapacityText"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@+id/text20"
+                    android:layout_alignLeft="@+id/text20"
+                    android:layout_alignStart="@+id/text20"
+                    android:layout_alignRight="@+id/totalPdctionAreaText"
+                    android:layout_alignEnd="@+id/totalPdctionAreaText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Production Capacity :"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/text21"
+                    android:layout_below="@+id/areaUnderCastorText"
+                    android:layout_alignLeft="@+id/areaUnderCastorText"
+                    android:layout_alignStart="@+id/areaUnderCastorText"
+                    android:layout_marginTop="15dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/productionCapacityText"
+                    android:layout_marginTop="8dp"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:nextFocusDown="@+id/yearsInCastorPdctText"
+                    android:layout_below="@+id/text21"
+                    android:layout_alignLeft="@+id/text21"
+                    android:layout_alignStart="@+id/text21"
+                    android:layout_alignRight="@+id/areaUnderCastorText"
+                    android:layout_alignEnd="@+id/areaUnderCastorText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mine Type :"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/text22"
+                    android:layout_below="@+id/productionCapacityText"
+                    android:layout_alignLeft="@+id/productionCapacityText"
+                    android:layout_alignStart="@+id/productionCapacityText"
+                    android:layout_marginTop="15dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/yearsInCastorPdctText"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@+id/text22"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:nextFocusDown="@+id/ownLandAreaText"
+                    android:layout_alignLeft="@+id/text22"
+                    android:layout_alignStart="@+id/text22"
+                    android:layout_alignRight="@+id/productionCapacityText"
+                    android:layout_alignEnd="@+id/productionCapacityText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Temporary Male Workers :"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/text23"
+                    android:layout_below="@+id/yearsInCastorPdctText"
+                    android:layout_alignLeft="@+id/yearsInCastorPdctText"
+                    android:layout_alignStart="@+id/yearsInCastorPdctText"
+                    android:layout_marginTop="15dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ownLandAreaText"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:nextFocusDown="@+id/leasedStatusText"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@+id/text23"
+                    android:layout_alignLeft="@+id/text23"
+                    android:layout_alignStart="@+id/text23"
+                    android:layout_alignRight="@+id/yearsInCastorPdctText"
+                    android:layout_alignEnd="@+id/yearsInCastorPdctText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Temporary Female Workers :"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/text24"
+                    android:layout_below="@+id/ownLandAreaText"
+                    android:layout_alignLeft="@+id/ownLandAreaText"
+                    android:layout_alignStart="@+id/ownLandAreaText"
+                    android:layout_marginTop="15dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/leasedStatusText"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@+id/text24"
+                    android:layout_alignLeft="@+id/text24"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:nextFocusDown="@+id/leasedAreaText"
+                    android:layout_alignStart="@+id/text24"
+                    android:layout_alignRight="@+id/ownLandAreaText"
+                    android:layout_alignEnd="@+id/ownLandAreaText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Legal Status :"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/text25"
+                    android:layout_below="@+id/leasedStatusText"
+                    android:layout_alignLeft="@+id/leasedStatusText"
+                    android:layout_alignStart="@+id/leasedStatusText"
+                    android:layout_marginTop="15dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/leasedAreaText"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@+id/text25"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:nextFocusDown="@+id/personInChargeText"
+                    android:layout_alignLeft="@+id/text25"
+                    android:layout_alignStart="@+id/text25"
+                    android:layout_alignRight="@+id/leasedStatusText"
+                    android:layout_alignEnd="@+id/leasedStatusText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Person in Charge :"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/text26"
+                    android:layout_below="@+id/leasedAreaText"
+                    android:layout_alignLeft="@+id/leasedAreaText"
+                    android:layout_alignStart="@+id/leasedAreaText"
+                    android:layout_marginTop="15dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/personInChargeText"
+                    android:layout_marginTop="8dp"
+                    android:maxLines="1"
+                    android:layout_below="@+id/text26"
+                    android:layout_alignLeft="@+id/text26"
+                    android:layout_alignStart="@+id/text26"
+                    android:layout_alignRight="@+id/leasedAreaText"
+                    android:layout_alignEnd="@+id/leasedAreaText" />
+
+
+
+            </RelativeLayout>
+        </ScrollView>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

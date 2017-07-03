@@ -1,0 +1,897 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:background="#1A000000"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="cied.in.Utz.BasicAuditDetailsActivity"
+    tools:showIn="@layout/activity_basic_audit_details">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/topLayout"
+                app:cardCornerRadius="6dp"
+                android:layout_marginBottom="5dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/spinner_bg"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="N"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:id="@+id/textView15"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/yellow_btn_bg"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_toLeftOf="@+id/textView15"
+                        android:layout_toStartOf="@+id/textView15"
+                        android:id="@+id/relativeLayout9">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:id="@+id/imageView8"
+                            android:src="@drawable/sync_button"
+                            android:layout_marginLeft="15dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SYNC"
+                            android:textSize="18sp"
+                            android:layout_marginLeft="10dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/dark_yellow"
+                            android:id="@+id/syncBtn"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignTop="@+id/relativeLayout9"
+                        android:background="@drawable/yellow_btn_bg"
+                        android:layout_toRightOf="@+id/textView15"
+                        android:layout_marginRight="10dp"
+                        android:layout_toEndOf="@+id/textView15"
+                        android:layout_alignBottom="@+id/relativeLayout9"
+                        android:id="@+id/relativeLayout11">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:id="@+id/imageView9"
+                            android:src="@drawable/submit_button"
+                            android:layout_marginLeft="5dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SUBMIT"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/dark_yellow"
+                            android:id="@+id/submitBtn"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true" />
+
+                        <RelativeLayout
+                            android:id="@+id/submitDisableLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:background="@drawable/disable_bg"
+                            android:layout_alignParentStart="true">
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/white_bg"
+                        android:layout_below="@+id/relativeLayout9"
+                        android:layout_alignLeft="@+id/relativeLayout9"
+                        android:layout_alignStart="@+id/relativeLayout9"
+                        android:layout_alignRight="@+id/relativeLayout9"
+                        android:layout_alignEnd="@+id/relativeLayout9"
+                        android:id="@+id/relativeLayout10">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:id="@+id/imageView10"
+                            android:src="@drawable/inspect_button"
+                            android:layout_marginLeft="5dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RECORD\nINSPECTION"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="14dp"
+                            android:textColor="@color/dark_yellow"
+                            android:id="@+id/inspectionBtn"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/imageView10"
+                            android:layout_toEndOf="@+id/imageView10"
+                            android:layout_marginStart="14dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/resultLayout"
+                        android:background="@drawable/white_bg"
+                        android:layout_alignTop="@+id/relativeLayout10"
+                        android:layout_alignLeft="@+id/relativeLayout11"
+                        android:layout_alignStart="@+id/relativeLayout11"
+                        android:layout_alignBottom="@+id/relativeLayout10"
+                        android:layout_alignRight="@+id/relativeLayout11"
+                        android:layout_alignEnd="@+id/relativeLayout11">
+
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:id="@+id/imageView11"
+                            android:src="@drawable/result_button"
+                            android:layout_marginLeft="5dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RESULT\nSHEET"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/dark_yellow"
+                            android:id="@+id/resultBtn"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true" />
+
+                        <RelativeLayout
+                            android:id="@+id/resultDisableLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentTop="true"
+                            android:background="@drawable/disable_bg"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"></RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/topLayout"
+                android:id="@+id/middleCard"
+                android:layout_marginTop="15dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="@drawable/header_bg"
+                        android:id="@+id/headerLayout"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Basic Details"
+                            android:textSize="22sp"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="15dp"
+                            android:id="@+id/text1"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+
+                        <RelativeLayout
+                            android:layout_width="110dp"
+                            android:layout_margin="8dp"
+                            android:background="@drawable/yellow_btn_bg"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:id="@+id/editlayout"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:id="@+id/imageView12"
+                                android:src="@drawable/edit_pencil"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="EDIT"
+                                android:textStyle="bold"
+                                android:layout_marginLeft="15dp"
+                                android:textColor="@color/dark_yellow"
+                                android:textSize="18sp"
+                                android:id="@+id/text2"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/imageView12"
+                                android:layout_toEndOf="@+id/imageView12" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/middleCard"
+                android:layout_alignParentStart="true">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Audit Details :"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/text3"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Farm / Group :"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/text4"
+                    android:layout_marginTop="27dp"
+                    android:layout_below="@+id/text3"
+                    android:layout_alignLeft="@+id/text3"
+                    android:layout_alignStart="@+id/text3" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/farmNameText"
+                    android:layout_marginRight="10dp"
+                    android:textSize="14sp"
+                    android:layout_below="@+id/text4"
+                    android:layout_alignLeft="@+id/text4"
+                    android:layout_alignStart="@+id/text4"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Auditors :"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/text5"
+                    android:layout_below="@+id/farmNameText"
+                    android:layout_alignLeft="@+id/farmNameText"
+                    android:layout_alignStart="@+id/farmNameText"
+                    android:layout_marginTop="15dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/auditorsText"
+                    android:scrollHorizontally="true"
+                    android:textSize="14sp"
+                    android:layout_below="@+id/text5"
+                    android:layout_alignLeft="@+id/text5"
+                    android:layout_alignStart="@+id/text5"
+                    android:layout_alignRight="@+id/farmNameText"
+                    android:layout_alignEnd="@+id/farmNameText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Year :"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/text6"
+                    android:layout_below="@+id/auditorsText"
+                    android:layout_alignLeft="@+id/auditorsText"
+                    android:layout_alignStart="@+id/auditorsText"
+                    android:layout_marginTop="15dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/yearText"
+                    android:textSize="14sp"
+                    android:layout_below="@+id/text6"
+                    android:layout_alignLeft="@+id/text6"
+                    android:layout_alignStart="@+id/text6"
+                    android:layout_alignRight="@+id/auditorsText"
+                    android:layout_alignEnd="@+id/auditorsText" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Legal Status :"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/text7"
+                    android:layout_below="@+id/yearText"
+                    android:layout_alignLeft="@+id/yearText"
+                    android:layout_alignStart="@+id/yearText"
+                    android:layout_marginTop="15dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/auditTypeText"
+                    android:layout_below="@+id/text7"
+                    android:textSize="14sp"
+                    android:layout_alignLeft="@+id/text7"
+                    android:layout_alignStart="@+id/text7"
+                    android:layout_alignRight="@+id/yearText"
+                    android:layout_alignEnd="@+id/yearText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Status :"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/text8"
+                    android:layout_below="@+id/auditTypeText"
+                    android:layout_alignLeft="@+id/auditTypeText"
+                    android:layout_alignStart="@+id/auditTypeText"
+                    android:layout_marginTop="15dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/statusText"
+                    android:textSize="14sp"
+                    android:layout_below="@+id/text8"
+                    android:layout_alignLeft="@+id/text8"
+                    android:layout_alignStart="@+id/text8"
+                    android:layout_alignRight="@+id/auditTypeText"
+                    android:layout_alignEnd="@+id/auditTypeText" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Start Date - End Date :"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/text9"
+                    android:layout_below="@+id/statusText"
+                    android:layout_alignLeft="@+id/statusText"
+                    android:layout_alignStart="@+id/statusText"
+                    android:layout_marginTop="15dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dateText"
+                    android:textSize="14sp"
+                    android:layout_below="@+id/text9"
+                    android:layout_alignLeft="@+id/text9"
+                    android:layout_alignStart="@+id/text9"
+                    android:layout_alignRight="@+id/statusText"
+                    android:layout_alignEnd="@+id/statusText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Farm Details :"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:id="@+id/text10"
+                    android:layout_below="@+id/dateText"
+                    android:layout_alignLeft="@+id/dateText"
+                    android:layout_alignStart="@+id/dateText"
+                    android:layout_marginTop="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Area :"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/text11"
+                    android:layout_below="@+id/text10"
+                    android:layout_alignLeft="@+id/text10"
+                    android:layout_alignStart="@+id/text10"
+                    android:layout_marginTop="20dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/farmAreaText"
+                    android:textSize="14sp"
+                    android:layout_below="@+id/text11"
+                    android:layout_alignLeft="@+id/text11"
+                    android:layout_alignStart="@+id/text11"
+                    android:layout_alignRight="@+id/dateText"
+                    android:layout_alignEnd="@+id/dateText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address :"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/text12"
+                    android:layout_below="@+id/farmAreaText"
+                    android:layout_alignLeft="@+id/farmAreaText"
+                    android:layout_alignStart="@+id/farmAreaText"
+                    android:layout_marginTop="15dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/addressText"
+                    android:textSize="14sp"
+                    android:layout_below="@+id/text12"
+                    android:layout_alignLeft="@+id/text12"
+                    android:layout_alignStart="@+id/text12"
+                    android:layout_alignRight="@+id/farmAreaText"
+                    android:layout_alignEnd="@+id/farmAreaText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="District :"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/text13"
+                    android:layout_below="@+id/addressText"
+                    android:layout_alignLeft="@+id/addressText"
+                    android:layout_alignStart="@+id/addressText"
+                    android:layout_marginTop="15dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/districtText"
+                    android:textSize="14sp"
+                    android:layout_below="@+id/text13"
+                    android:layout_alignLeft="@+id/text13"
+                    android:layout_alignStart="@+id/text13"
+                    android:layout_alignRight="@+id/addressText"
+                    android:layout_alignEnd="@+id/addressText" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone Number :"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/text14"
+                    android:layout_below="@+id/districtText"
+                    android:layout_alignLeft="@+id/districtText"
+                    android:layout_alignStart="@+id/districtText"
+                    android:layout_marginTop="15dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/phoneNumberText"
+                    android:textSize="14sp"
+                    android:layout_below="@+id/text14"
+                    android:layout_alignLeft="@+id/text14"
+                    android:layout_alignStart="@+id/text14"
+                    android:layout_alignRight="@+id/districtText"
+                    android:layout_alignEnd="@+id/districtText" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="City :"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/text15"
+                    android:layout_below="@+id/phoneNumberText"
+                    android:layout_alignLeft="@+id/phoneNumberText"
+                    android:layout_alignStart="@+id/phoneNumberText"
+                    android:layout_marginTop="15dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tehsilText"
+                    android:textSize="14sp"
+                    android:layout_below="@+id/text15"
+                    android:layout_alignLeft="@+id/text15"
+                    android:layout_alignStart="@+id/text15"
+                    android:layout_alignRight="@+id/phoneNumberText"
+                    android:layout_alignEnd="@+id/phoneNumberText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Country :"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/text16"
+                    android:layout_below="@+id/tehsilText"
+                    android:layout_alignLeft="@+id/tehsilText"
+                    android:layout_alignStart="@+id/tehsilText"
+                    android:layout_marginTop="15dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/villageText"
+                    android:textSize="14sp"
+                    android:layout_below="@+id/text16"
+                    android:layout_alignLeft="@+id/text16"
+                    android:layout_alignStart="@+id/text16"
+                    android:layout_alignRight="@+id/tehsilText"
+                    android:layout_alignEnd="@+id/tehsilText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Identification Number :"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/text17"
+                    android:layout_below="@+id/villageText"
+                    android:layout_alignLeft="@+id/villageText"
+                    android:layout_alignStart="@+id/villageText"
+                    android:layout_marginTop="15dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/idNumberText"
+                    android:textSize="14sp"
+                    android:layout_below="@+id/text17"
+                    android:layout_alignLeft="@+id/text17"
+                    android:layout_alignStart="@+id/text17"
+                    android:layout_alignRight="@+id/villageText"
+                    android:layout_alignEnd="@+id/villageText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Type of Operator :"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/text18"
+                    android:layout_below="@+id/idNumberText"
+                    android:layout_alignLeft="@+id/idNumberText"
+                    android:layout_alignStart="@+id/idNumberText"
+                    android:layout_marginTop="15dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/CFAText"
+                    android:textSize="14sp"
+                    android:layout_below="@+id/text18"
+                    android:layout_alignLeft="@+id/text18"
+                    android:layout_alignStart="@+id/text18"
+                    android:layout_alignRight="@+id/idNumberText"
+                    android:layout_alignEnd="@+id/idNumberText" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Permenent Male workers:"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/text19"
+                    android:layout_below="@+id/CFAText"
+                    android:layout_alignLeft="@+id/CFAText"
+                    android:layout_alignStart="@+id/CFAText"
+                    android:layout_marginTop="15dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/totalPdctionAreaText"
+                    android:layout_below="@+id/text19"
+                    android:textSize="14sp"
+                    android:layout_alignLeft="@+id/text19"
+                    android:layout_alignStart="@+id/text19"
+                    android:layout_alignRight="@+id/CFAText"
+                    android:layout_alignEnd="@+id/CFAText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Permenent Female workers:"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/text20"
+                    android:layout_below="@+id/totalPdctionAreaText"
+                    android:layout_alignLeft="@+id/totalPdctionAreaText"
+                    android:layout_alignStart="@+id/totalPdctionAreaText"
+                    android:layout_marginTop="15dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/areaUnderCastorText"
+                    android:textSize="14sp"
+                    android:layout_below="@+id/text20"
+                    android:layout_alignLeft="@+id/text20"
+                    android:layout_alignStart="@+id/text20"
+                    android:layout_alignRight="@+id/totalPdctionAreaText"
+                    android:layout_alignEnd="@+id/totalPdctionAreaText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Production :"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/text21"
+                    android:layout_below="@+id/areaUnderCastorText"
+                    android:layout_alignLeft="@+id/areaUnderCastorText"
+                    android:layout_alignStart="@+id/areaUnderCastorText"
+                    android:layout_marginTop="15dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/productionCapacityText"
+                    android:textSize="14sp"
+                    android:layout_below="@+id/text21"
+                    android:layout_alignLeft="@+id/text21"
+                    android:layout_alignStart="@+id/text21"
+                    android:layout_alignRight="@+id/areaUnderCastorText"
+                    android:layout_alignEnd="@+id/areaUnderCastorText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Temporary Male workers :"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/text22"
+                    android:layout_below="@+id/productionCapacityText"
+                    android:layout_alignLeft="@+id/productionCapacityText"
+                    android:layout_alignStart="@+id/productionCapacityText"
+                    android:layout_marginTop="15dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:id="@+id/yearsInCastorPdctText"
+                    android:layout_below="@+id/text22"
+                    android:layout_alignLeft="@+id/text22"
+                    android:layout_alignStart="@+id/text22"
+                    android:layout_alignRight="@+id/productionCapacityText"
+                    android:layout_alignEnd="@+id/productionCapacityText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Temporary Female workers:"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/text23"
+                    android:layout_below="@+id/yearsInCastorPdctText"
+                    android:layout_alignLeft="@+id/yearsInCastorPdctText"
+                    android:layout_alignStart="@+id/yearsInCastorPdctText"
+                    android:layout_marginTop="15dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:id="@+id/ownLandAreaText"
+                    android:layout_below="@+id/text23"
+                    android:layout_alignLeft="@+id/text23"
+                    android:layout_alignStart="@+id/text23"
+                    android:layout_alignRight="@+id/yearsInCastorPdctText"
+                    android:layout_alignEnd="@+id/yearsInCastorPdctText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Type of Process:"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/text24"
+                    android:layout_below="@+id/ownLandAreaText"
+                    android:layout_alignLeft="@+id/ownLandAreaText"
+                    android:layout_alignStart="@+id/ownLandAreaText"
+                    android:layout_marginTop="15dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/leasedStatusText"
+                    android:textSize="14sp"
+                    android:layout_below="@+id/text24"
+                    android:layout_alignLeft="@+id/text24"
+                    android:layout_alignStart="@+id/text24"
+                    android:layout_alignRight="@+id/ownLandAreaText"
+                    android:layout_alignEnd="@+id/ownLandAreaText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="is Certified Before :"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/text25"
+                    android:layout_below="@+id/leasedStatusText"
+                    android:layout_alignLeft="@+id/leasedStatusText"
+                    android:layout_alignStart="@+id/leasedStatusText"
+                    android:layout_marginTop="15dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/leasedAreaText"
+                    android:layout_below="@+id/text25"
+                    android:textSize="14sp"
+                    android:layout_alignLeft="@+id/text25"
+                    android:layout_alignStart="@+id/text25"
+                    android:layout_alignRight="@+id/leasedStatusText"
+                    android:layout_alignEnd="@+id/leasedStatusText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Person in Charge :"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/text26"
+                    android:layout_below="@+id/leasedAreaText"
+                    android:layout_alignLeft="@+id/leasedAreaText"
+                    android:layout_alignStart="@+id/leasedAreaText"
+                    android:layout_marginTop="15dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/personInChargeText"
+                    android:layout_below="@+id/text26"
+                    android:textSize="14sp"
+                    android:layout_alignLeft="@+id/text26"
+                    android:layout_alignStart="@+id/text26"
+                    android:layout_alignRight="@+id/leasedAreaText"
+                    android:layout_alignEnd="@+id/leasedAreaText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Other Certification Borad:"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/text27"
+                    android:layout_below="@+id/personInChargeText"
+                    android:layout_alignLeft="@+id/personInChargeText"
+                    android:layout_alignStart="@+id/personInChargeText"
+                    android:layout_marginTop="15dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/numberOfSuppliersText"
+                    android:layout_below="@+id/text27"
+                    android:textSize="14sp"
+                    android:layout_alignLeft="@+id/text27"
+                    android:layout_alignStart="@+id/text27"
+                    android:layout_alignRight="@+id/personInChargeText"
+                    android:layout_alignEnd="@+id/personInChargeText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Area Under Utz :"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/text28"
+                    android:layout_below="@+id/numberOfSuppliersText"
+                    android:layout_alignLeft="@+id/numberOfSuppliersText"
+                    android:layout_alignStart="@+id/numberOfSuppliersText"
+                    android:layout_marginTop="15dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/numberOfShiftText"
+                    android:layout_below="@+id/text28"
+                    android:textSize="14sp"
+                    android:layout_alignLeft="@+id/text28"
+                    android:layout_alignStart="@+id/text28"
+                    android:layout_alignRight="@+id/numberOfSuppliersText"
+                    android:layout_alignEnd="@+id/numberOfSuppliersText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Workers living at peak season :"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/text29"
+                    android:layout_below="@+id/numberOfShiftText"
+                    android:layout_alignLeft="@+id/numberOfShiftText"
+                    android:layout_alignStart="@+id/numberOfShiftText"
+                    android:layout_marginTop="15dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/leadershipText"
+                    android:layout_below="@+id/text29"
+                    android:textSize="14sp"
+                    android:layout_alignLeft="@+id/text29"
+                    android:layout_alignStart="@+id/text29"
+                    android:layout_alignRight="@+id/numberOfShiftText"
+                    android:layout_alignEnd="@+id/numberOfShiftText" />
+
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>
